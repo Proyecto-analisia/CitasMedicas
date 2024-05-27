@@ -1,0 +1,16 @@
+@startuml clinica2
+actor Paciente
+participant "SGC Frontend" as FE
+participant "SGC Backend" as BE
+participant "Base de Datos" as DB
+
+Paciente -> FE: Solicitar Crear Cita
+FE -> BE: Enviar Detalles de Cita
+BE -> DB: Validar Disponibilidad
+DB --> BE: Disponibilidad Confirmada
+BE -> DB: Guardar Cita
+DB --> BE: Confirmación de Almacenamiento
+BE -> FE: Confirmación de Cita
+FE -> Paciente: Mostrar Confirmación
+
+@enduml

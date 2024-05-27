@@ -1,0 +1,21 @@
+@startuml citas
+actor Paciente
+actor Medico
+actor Administrador
+
+Paciente --> (Registrar Cita)
+Paciente --> (Modificar Cita)
+Paciente --> (Cancelar Cita)
+Paciente --> (Consultar Historial de Citas)
+Paciente --> (Ver Disponibilidad de Medicos)
+
+Medico --> (Consultar Horario)
+Medico --> (Actualizar Disponibilidad)
+Medico --> (Consultar Historial de Pacientes)
+
+Administrador --> (Registrar Usuario)
+Administrador --> (Actualizar Datos de Usuarios)
+Administrador --> (Generar Reportes)
+Administrador --> (Configurar Sistema)
+
+@enduml

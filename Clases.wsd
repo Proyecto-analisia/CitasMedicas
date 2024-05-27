@@ -1,0 +1,50 @@
+@startuml clinica
+class Usuario {
+  +String id
+  +String nombre
+  +String email
+  +String rol
+  +String contraseña
+}
+
+class Paciente {
+  +List<Cita> historialCitas
+  +String informacionPersonal
+}
+
+class Medico {
+  +String especialidad
+  +List<Horario> horarios
+  +List<Cita> citasProgramadas
+}
+
+class Cita {
+  +String id
+  +Date fecha
+  +Time hora
+  +String estado
+  +Paciente paciente
+  +Medico medico
+}
+
+class Factura {
+  +String id
+  +Cita cita
+  +Double monto
+  +String estadoPago
+}
+
+class Horario {
+  +Day dia
+  +Time inicio
+  +Time fin
+}
+
+Usuario <|-- Paciente
+Usuario <|-- Medico
+Paciente "1" --> "*" Cita
+Medico "1" --> "*" Cita
+Cita "1" --> "1" Factura
+Medico "1" --> "*" Horario
+
+@enduml
