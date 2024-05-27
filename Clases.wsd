@@ -6,6 +6,7 @@ class Usuario {
   +String rol
   +String contraseña
 }
+
 class Paciente {
   +List<Cita> historialCitas
   +String informacionPersonal
