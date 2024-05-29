@@ -42,7 +42,8 @@ FICHA DEL DOCUMENTO
 * 5.Plan de desarrollo
 - 5.1.Configuración del entorno de desarrollo
 - 5.2.Configuración del proyecto
-* 6.Bibliografía
+* 6. Mockup
+- 7.Bibliografía
 
 # Especificación de Requisitos de Software para un Sistema de Gestión de Citas Médicas 
 
@@ -257,7 +258,12 @@ En esta sección del documento se anexan las estructuras de código de diagramas
 - Configurar variables de entorno (`.env`).
 - Instalar dependencias de Node.js.
 
-# 6.Bibliografía
+# 6. Mockup
+
+![image](https://github.com/Proyecto-analisia/CitasMedicas/assets/160141384/59362927-034f-4c0c-86d0-122a3ff0392b)
+
+
+# 7.Bibliografía
 
 - IEEE Std 830-1998. IEEE Recommended Practice for Software Requirements Specifications. Institute of Electrical and Electronics Engineers, 1998.
 
